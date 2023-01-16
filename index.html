@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALLINA- INFINITY SHOES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+.navigimi-majte
+{
+    display: flex;
+flex-direction: row;
+}
+            .msfoto img{
+                width: 100px;
+                height: 50px;
+            }
+
+            .media-sociale
+            {
+                background-color: aliceblue;
+            }
+            *
+{
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0%;
+}
+
+body 
+{
+    color: white;
+    background-color: rgb(16, 15, 15);
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+button
+{
+    background-color: rgb(240, 234, 234);
+    color: black;
+    cursor: pointer;
+    transition: 1.5s;
+    height: 25px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    width: 100px;
+}
+
+button:hover 
+{
+    background-color: rgb(203, 191, 191);   
+    color: black;
+}
+.informimi
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;   
+padding: 5px;
+}
+
+.infm i{
+    color: black;
+}
+
+.infm
+{
+    background-color: aqua;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ .counter-grid
+{
+    display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-column-gap: 20px;
+    width: 100%;
+    position: relative;
+
+}
+
+.counter-img 
+{
+    width: 500px;
+    height: 300px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.counter-item 
+{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+#ne-veti 
+{
+    width: 100%;
+    height:auto;
+    background-image:url(fotografite/fotoegjate.jpg);
+    background-position: 0%;
+    background-size: cover;
+}
+
+
+@keyframes slide-up {
+    0%   { left:0px; top:0px; opacity: 0;}
+    25%  { left:200px; top:0px; opacity: 0.2;}
+    50%  { left:200px; top:0px; opacity: 0.4;}
+    75%  {left:100px; top: 00px; opacity: 0.6;}
+    100% { left:0px; top:0px; opacity: 1;}
+    
+}
+
+.hebs
+{
+    width: 100px;
+    height: 80px;
+}
+
+.navigimi 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navigimi-djathte , .navigimi-djathte a
+{
+    color:white;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.navigimi-djathte a:hover, .aktivizuar
+{
+    background-color: orangered;
+    color: white;
+    transition: 1.2s ease;
+}
+
+.aktivizuar:hover{
+    background-color: rgb(146, 63, 63);
+}
+
+/*klasa slide-im te mos shieht*/
+.slide-im
+{
+    display: none;
+}
+
+
+/*fotografite te kene gjatesi 600px dhe gjeresi 100%*/
+img
+{
+    width: 100%;
+    height: 600px;
+}
+
+.produkt-detaje img 
+{
+    height:400px;
+}
+
+/*klasa fotografite-permbajtja*/
+.fotografite-permbajtja
+{
+    /*te kete  pozicion relativ*/
+    position: relative;
+   
+    /*gjeresi 100%*/
+    width: 100%;
+}
+
+/*klasa pershkrimi*/
+.pershkrimi
+{
+    /*te keteposzite absolute*/
+    position: absolute;
+    
+    /*gjeresi 100%*/
+    width: 50%;
+    /*opacity 0.8*/
+    opacity: 0.8;
+    padding:0px;
+    height:120px;
+
+    top:0;
+    margin-top:300px;
+    margin-left:30px;
+
+
+    /*teksti te jete ne qender*/
+    text-align: center;
+
+    /*prapavije blue e holle*/
+    background-color: rgb(221, 221, 242) ;
+
+    /*poshte 8px*/
+    bottom: 8px;
+}
+
+/*klasa numerimi*/
+.numerimi
+{
+    color:white;
+    position: absolute;
+    top:0;
+}
+
+/*klasa piket-kalimi , te vendoset ne qender*/
+.piket-kalimi
+{
+    text-align: center;
+}
+
+/*klasa piket*/
+.piket
+{
+    /*hapsirat 3px 10px 3px 10px*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /*prapavija e verdhe*/
+    background-color: yellow;
+}
+
+/*klasa active*/
+.active
+{
+    /*prapavija e portokallt*/
+    background-color: orange;
+}
+
+.counter-img:hover
+{
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+
+
+@media only screen and (min-width:300px){
+    .mediasociale{
+                padding-left: 30%;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+    .fundi  
+    {
+        padding-left: 30%;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .pershkrimi
+    {
+        /*te keteposzite absolute*/
+        position: absolute;
+        
+        /*gjeresi 100%*/
+        width: 50%;
+        /*opacity 0.8*/
+        opacity: 0.8;
+        padding:0px;
+        height:300px;
+    
+        top:0;
+        margin-top:250px;
+        margin-left:30px;
+    
+    
+        /*teksti te jete ne qender*/
+        text-align: center;
+    
+        /*prapavije blue e holle*/
+        background-color: rgb(221, 221, 242) ;
+    
+        /*poshte 8px*/
+        bottom: 8px;
+    }
+
+    .navigimi-djathte 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informimi{
+        display: flex;
+        flex-direction: column;
+    }
+    #ne-veti 
+{
+    width: 100%;
+    height: 1300px;
+    background-image: url(fororgrafite/fotoegjate.jpg);
+    background-position: 50%;
+    background-size: cover;
+    display: none;
+}
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.counter-grid
+{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 20px;
+    width: 100%;
+    position: relative;
+
+}
+
+.navigimi , .informimi
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 40%;
+}
+
+.navigimi a 
+{
+width: 120px;
+}
+.counter-img 
+{
+    width: 100%;
+    height: 300px;
+    margin: 0%;
+    padding: 0%;
+}#rr-id-grid 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.rradhitja 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pershkrimi-linje
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kutia
+{
+	
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.oferta 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media only screen and (min-width:800px){
+    .mediasociale{
+                padding-left: 20%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+    .fundi{
+        padding-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .pershkrimi-linje
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .informimi{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigimi-djathte 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pershkrimi
+    {
+        /*te keteposzite absolute*/
+        position: absolute;
+        
+        /*gjeresi 100%*/
+        width: 50%;
+        /*opacity 0.8*/
+        opacity: 0.8;
+        padding:0px;
+        height:120px;
+        right: 0;
+        float: right;
+    
+        /*teksti te jete ne qender*/
+        text-align: center;
+    
+        /*prapavije blue e holle*/
+        background-color: rgb(221, 221, 242) ;
+    
+        /*poshte 8px*/
+        bottom: 8px;
+    }
+
+    .navigimi, .informimi
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:  column;
+    padding-left: 40%;
+}
+    .counter-grid
+{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#ne-veti 
+{
+    width: 100%;
+    height: 1200px;
+    background-image: url(fororgrafite/fotoegjate.jpg);
+    background-position: 0%;
+    background-size: cover;
+    display: block;
+}
+.rradhitja 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pershkrimi-linje
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kutia
+{
+	
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.oferta 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+  
+
+}
+@media only screen and (max-width: 1000px) {
+    img 
+    {
+        width: 100%;
+    }
+ }
+@media only screen and (min-width:1200px){
+    .fundi{
+        padding-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .oferta 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .pershkrimi-linje
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .informimi{
+        display: flex;
+        flex-direction: row;
+    }
+    .navigimi-djathte 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .pershkrimi{
+        /*te keteposzite absolute*/
+        position: absolute;
+        
+        /*gjeresi 100%*/
+        width: 50%;
+        /*opacity 0.8*/
+        opacity: 0.8;
+        padding:0px;
+        height:120px;
+    
+        top:0;
+        margin-top:300px;
+        margin-left:30px;
+    
+    
+        /*teksti te jete ne qender*/
+        text-align: center;
+    
+        /*prapavije blue e holle*/
+        background-color: rgb(221, 221, 242) ;
+    
+        /*poshte 8px*/
+        bottom: 8px;
+    }
+
+    .counter-grid
+{
+    display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-column-gap: 20px;
+    width: 100%;
+    position: relative;
+
+}
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#ne-veti 
+{
+    width: 100%;
+    height: auto;
+    background-image: url(fororgrafite/fotoegjate.jpg);
+    background-position: 0%;
+    background-size: cover;
+}
+.navigimi 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0%;
+}
+.informimi
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;   
+padding: 5px;
+}
+
+.rradhitja 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.kutia
+{
+	
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.numeruesi-produkt 
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    
+}
+
+.numeruesi-produkt img
+{
+	width: 200px;
+    height: 150px;
+}
+
+.numeruesi-produkt img , .numeruesi
+{
+    	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+}
+.numeruesi-produkt img
+{
+	width: 200px;
+    height: 150px;
+}
+.oferta, .oferta-pjesa-pare
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+.pershkrimi-oferta-pare
+{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; 
+}
+
+.produkti-oferte-fotografi
+{
+    width: 300px;
+    height: 200px;
+}
+
+.produktet-levizese {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.oferta 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.produktet-levizese
+{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin:0 auto
+}
+
+.shigjeta
+{
+    width: 40px;
+    height: 30px;
+    margin:0px 15px;
+    margin-top: 100px;
+}
+
+.section
+{
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+.section .korniza-produkti
+{
+    flex:0 0 auto;
+    cursor:pointer;
+    margin:5px;
+    overflow:hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+
+.korniza-produkti img 
+{
+    width: 200px;
+    height: 200px;
+}
+
+.jeshile
+{
+    color:green;
+    font-size: 20px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.produkti-detaje p 
+{
+    color:red;
+}
+
+.produkti-detaje 
+{
+    background-color: lightgray;
+    width: 200px;
+    border: solid lightgray 1px;
+    text-align: center;
+}
+
+.kuqe 
+{
+    text-decoration: line-through;
+    font-weight: 700;
+}
+
+
+.section .korniza-produkti:hover
+{
+    transform: scale(1);
+    cursor: pointer;
+}
+.section::-webkit-scrollbar
+{
+    height: 5px;
+    width: 2px;
+    border: 1px solid dodgerblue;
+    background-color: black;
+}
+
+.section::-webkit-scrollbar-track
+{
+    --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.section::-webkit-scrollbar-thumb
+{
+    background-color: white;
+    width: 100px;
+    outline: 1px solid #eee;
+}
+
+
+
+.produkti
+{
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.produkti img 
+{
+    width: 200px;
+    height: 200px;
+}
+
+#fshehjaShfaqja {
+    display: none;
+}
+
+
+.shfaqja 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width:300px) {
+    .produktet 
+{
+    display: grid;
+	grid-template-columns: 1fr ;
+    margin-left: 30%;
+}
+
+}
+@media only screen and (min-width:800px) {
+    .produktet 
+{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    margin-left: 15%;
+}
+
+}
+@media only screen and (min-width:1200px) {
+    .produktet 
+{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10%;
+}
+
+}
+
+.korniza-produkti h2 
+{
+    color:black;
+}
+
+.navigimi-djathte {
+    overflow: hidden;
+    
+    background-color: rgb(16, 15, 15);
+    color: white;
+  }
+  
+  .navigimi-djathte a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navigimi-djathte a:hover {
+    
+    background-color: rgb(16, 15, 15);
+    color: white;
+  }
+  
+  .navigimi-djathte a.active {
+    background-color: #282c2b;
+    color: white;
+  }
+  
+  .navigimi-djathte .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navigimi-djathte a:not(:first-child) {display: none;}
+    .navigimi-djathte a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navigimi-djathte.responsive {position: relative;}
+    .navigimi-djathte.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigimi-djathte.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .navigimi-djathte.responsive a:hover
+    {
+        padding-left: 50px;
+        transition: 0.5s ease;
+    }
+  }
+
+  @media screen and (min-width:300px) {
+    #ne-veti
+    {
+        background-image: url(fotografite/tel.jpg);
+        height:300px;
+    }
+  }
+
+  @media screen and (min-width:800px) {
+    #ne-veti
+    {
+        background-image: url(fotografite/fotoegjate.jpg);
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #ne-veti
+    {
+        background-image: url(fotografite/fotoegjate.jpg);
+        height: auto;
+    }
+}
+        </style>
+
+</head>
+<body>
+
+
+
+    <div class="navigimi">
+        <div class="navigimi-majte">
+            <img src="ikonat/logo.jfif" style="width: 80px; height: 80px; border-radius: 50%;">
+            <h1 style="text-transform: capitalize;">INFINITY SHOES</h1>
+        </div>
+
+        <div class="navigimi-djathte" id="nav" style="color: white;">
+            <a href="#">Ballina</a>
+            <a href="#">Produktet</a>
+            <a href="#">Oferta</a>
+            <a href="#">Orari</a>
+            <a href="#">Rreth Nesh</a>
+            <a href="#" class="aktivizuar">Kontakti</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+
+       
+    </div>
+
+
+        <!--e krijojme nje div me klase dhe id fotografite-permbajtja-->
+        <div class="fotografite-permbajtja" id="fotografite-permbjatja">
+
+            <!--e kemi kriju ni div me klase dhe id slide-im-->
+            <div class="slide-im" id="slide-im">
+    
+                <!--e kemi krijuar nje div me klase dhe id numerimi-->
+                <div class="numerimi" id="numerimi">
+                    1/3
+                </div><!--mbyllja e klases dhe id nuemrimi-->
+    
+                <!--fotografite-->
+                <img src="fotografite/slide1.jpg" width="100%" height="8000px">
+    
+                <!--e kemi kriju ni klase dhe id pershkrimi-->
+                <div class="pershkrimi" id="pershkrimi">
+                    <h1 style="color:black; font-size:50px;">Have a good step</h1>
+                </div><!--mbarimi i klases dhe id pershkrimi-->
+    
+            </div> <!--mbyllja e klases dhe idse slide-im-->
+    
+             <!--e kemi kriju ni div me klase dhe id slide-im-->
+             <div class="slide-im" id="slide-im">
+    
+                <!--e kemi krijuar nje div me klase dhe id numerimi-->
+                <div class="numerimi" id="numerimi">
+                    2/3
+                </div><!--mbyllja e klases dhe id nuemrimi-->
+    
+            <!--fotografite-->
+            <img src="fotografite/1.jfif" alt="">
+    
+            <!--e kemi kriju ni klase dhe id pershkrimi-->
+            <div class="pershkrimi" id="pershkrimi">
+                <h1 style="color:black; font-size:50px;">Never stop, go faster</h1>
+            </div><!--mbarimi i klases dhe id pershkrimi-->
+    
+             </div><!--mbyllja e klases dhe idse slide-im-->
+    
+    
+              <!--e kemi kriju ni div me klase dhe id slide-im-->
+            <div class="slide-im" id="slide-im">
+    
+                <!--e kemi krijuar nje div me klase dhe id numerimi-->
+                <div class="numerimi" id="numerimi">
+                    3/3
+                </div><!--mbyllja e klases dhe id nuemrimi-->
+    
+            <!--fotografite-->
+            <img src="fotografite/slide2.jpg" alt="">
+    
+            <!--e kemi kriju ni klase dhe id pershkrimi-->
+            <div class="pershkrimi" id="pershkrimi">
+                <h1 style="color:black; font-size:50px;">Move with power</h1>
+            </div><!--mbarimi i klases dhe id pershkrimi-->
+    
+            </div> <!--mbyllja e klases dhe idse slide-im-->
+    
+        </div><!--mbyllja e klases dhe id fotografite-perbajtja-->
+    
+        <!--e kemi kriju ni klase piket kalimi-->
+        <div class="piket-kalimi">
+            <!--i kemi kriju 3 spane me id piket dhe klase piket-->
+            <span class="piket" id="piket" style="display:none;">Foto 1</span>
+            <span class="piket" id="piket" style="display:none;">Foto 2</span>
+            <span class="piket" id="piket" style="display:none;">Foto 3</span>
+        </div>
+        </main>
+    
+
+        
+        
+        <section id="pjesa-numeruese">
+            <div class="container">
+        
+                <div class="rradhitja">
+                    <div class="kutia">
+                       <div class="numeruesi-produkt">
+                        <img src="ikonat/kk.png" alt="Image"  width="20px"/>
+                         <div class="pershkrimi-kutia">
+                            <a href="#" style="color: white; font-size: 20;">Clients</a>
+                          <br>
+                           <div class="pershkrimi-linje" style="color:white;" >
+                            <a style="color: white; font-size: 20;">+</a>
+                            <a style="color: white; font-size: 20;" class="numeruesi" data-target="200"></a>
+                           </div>
+                         </div>
+                        </div>
+                    </div>
+                   
+        
+                    <div class="kutia" >
+                        <div class="numeruesi-produkt">
+                            <img src="ikonat/kepuce.png" alt="Image"  width="20%"/>
+                       
+                            <a href="#" style="color: white; font-size: 20;">Brende</a>
+                            <div class="pershkrimi-linje" style="color:white;" >
+                                <a style="color: white; font-size: 20;">+</a>
+                                <a style="color: white; font-size: 20;" class="numeruesi" data-target="20"></a>
+                               </div>
+                            </div>
+                    </div>
+        
+                    <div class="kutia" >
+                        <div class="numeruesi-produkt"id="fk">
+                                  <img src="ikonat/transporti.png" alt="Image" width="20%" />
+                                  <a href="#" style="color: white; font-size: 20;">transporti</a>
+                                  <div class="pershkrimi-linje" style="color:white;" >
+                                    <a style="color: white; font-size: 20;">+</a>
+                                    <a style="color: white; font-size: 20;" class="numeruesi" data-target="10"></a>
+                                    
+                            <a style="color: white; font-size: 20;">shtete </a>
+                                   </div>
+                                    
+                        </div>
+                    </div>
+        
+                    <div class="kutia" >
+                        <div class="numeruesi-produkt"id="fk">
+                        <img src="ikonat/koha.png" alt="Image" width="20%" />
+                        
+                        <a href="#" style="color: white; font-size: 20;">dergimi</a>
+                        <div class="pershkrimi-linje" style="color:white;" >
+                            <a style="color: white; font-size: 20;" class="numeruesi" data-target="24"></a>
+                            <a style="color: white; font-size: 20;">h - </a>
+                            <a style="color: white; font-size: 20;" class="numeruesi" data-target="72"></a>
+                            
+                            <a style="color: white; font-size: 20;">h </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="section_counter">
+    <div class="container">
+        
+        <div class="counter-item" id="ne-veti" style="background-image: url(fotografite/fotoegjate.jpg);">
+            <h1 class="counter" data-target="700"style="display:none;">0</h1>
+        </div>
+
+        <div class="counter-grid">
+            <div class="fotografia">
+                <img src="kepucet/nikeairjordan4/4.jpeg" alt="Image" class="counter-img" />
+                <div class="counter-item">
+                    <h1 class="counter" data-target="1000"style="display:none;" >0</h1>
+                    <h3 style="text-transform: uppercase;">Nike Air Jordan 4</h3>
+                    <p style="text-transform: uppercase;"><span style="text-decoration: line-through;color: red;">205&euro;</span> 147&euro;</p>
+                    <button> <a href="nikeairjordan4_0005.php">Porosit</a>   <br></button>
+                </div>
+            </div>
+           
+
+            <div class="fotografia">
+                <img src="kepucet/nikeairforcepink/3.jpeg" alt="Image" class="counter-img" />
+                <div class="counter-item">
+                    <h1 class="counter" data-target="1000"style="display:none;" >0</h1>
+                    <h3 style="text-transform: uppercase;">Nike Air Force Pink</h3>
+                    <p style="text-transform: uppercase;"><span style="text-decoration: line-through;color: red;">160&euro;</span> 102&euro;</p>
+                    <button> <a href="nikeairforcepink0003.php">Porosit</a>   <br></button>
+                </div>
+            </div>
+
+            <div class="fotografia">
+                <img src="kepucet/nikeairforcechain/1.jpeg" alt="Image" class="counter-img" />
+                <div class="counter-item">
+                    <h1 class="counter" data-target="1000"style="display:none;" >0</h1>
+                    <h3 style="text-transform: uppercase;">Nike Air Force Chain</h3>
+                    <p style="text-transform: uppercase;"><span style="text-decoration: line-through;color: red;">175&euro;</span> 115&euro;</p>
+                    <button> <a href="nikeairforcechain0002.php">Porosit</a>   <br></button>
+                </div>
+            </div>
+
+            <div class="fotografia">
+                <img src="kepucet/nikeairhaurche/2.jpeg" alt="Image" class="counter-img" />
+                <div class="counter-item">
+                    <h1 class="counter" data-target="1000"style="display:none;" >0</h1>
+                    <h3 style="text-transform: uppercase;">Nike Air Huarche</h3>
+                    <p style="text-transform: uppercase;"><span style="text-decoration: line-through;color: red;">160&euro;</span> 102&euro;</p>
+                    <button> <a href="nikeairhaurche0004.php">Porosit</a>   <br></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h1 style="text-align: center;">Të Tjera Produkte</h1>
+<div class="produktet-levizese" id="produktet">
+    <img id="zvarrit-majtas" class="shigjeta" src="ikonat/majte.png" alt="fotografia e shigjetes ne kahjen e majte" style="cursor: pointer;">
+    <section class="section" id="slider">
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairjordan4/1.jpeg" alt="telefon iphone 12 pro max">
+            <div class="produkti-detaje">
+                <h2>Nike Air Jordan 4</h2>
+                <p>
+                    <span id="Iphone-12-pro-max-cmimi-vjeter-slider" class="kuqe">205&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="Iphone-12-pro-max-cmimi-ri-slider" class="jeshile">147&euro;</span>
+                </p>
+                <button> <a href="nikeairjordan4_0005.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairforce/3.jfif" alt="degjuese hyperx">
+            <div class="produkti-detaje">
+                <h2>Nike Air force</h2>
+                <p>
+                    <span id="hyperx-cmimi-vjeter-slider" class="kuqe">180&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="hyperx-cmimi-ri-slider" class="jeshile">112&euro;</span>
+                </p> <button> <a href="nikeairforce0001.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairmax95/3.jfif" alt="maus razer">
+            <div class="produkti-detaje">
+                <h2>Nike Air Max 95</h2>
+                <p>
+                    <span id="razer-cmimi-vjeter-slider" class="kuqe">180&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="razer-cmimi-ri-slider" class="jeshile">117&euro;</span>
+                </p>
+                <button> <a href="nikeairmax95_0007.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairforcegoretex4/1.jfif" alt="degjuese jbl">
+            <div class="produkti-detaje">
+                <h2>NIKE AIR GORE TEX</h2>
+                <p>
+                    <span id="jbl-cmimi-vjeter-slider" class="kuqe">190&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="jbl-cmimi-ri-slider" class="jeshile">122&euro;</span>
+                </p>
+                <button> <a href="nikeairforcegoretex0010.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairuptempo/1.jfif" alt="televizion sony">
+            <div class="produkti-detaje">
+                <h2>NIKE AIR UpTempo</h2>
+                <p>
+                    <span id="sonyTv-cmimi-vjeter-slider" class="kuqe">205&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="sonyTv-cmimi-ri-slider" class="jeshile">135&euro;</span>
+                </p> <button><a href="nikeairUpTempo0022.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="korniza-produkti">
+            <img src="kepucet/nikeairforcelunar/1.jfif" alt="maus logitech">
+            <div class="produkti-detaje">
+                <h2>NIKE AIR FORCE LUNAR</h2>
+                <p>
+                    <span id="logitech-cmimi-vjeter-slider" class="kuqe">200&euro;</span>
+                    <span style="color:green">$</span>
+                    <span id="logitech-cmimi-ri-slider" class="jeshile">132&euro;</span>
+                </p> <button><a href="nikeairforcelunar0020.php">Shto në shportë</a>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <img id="zvarrit-djathtas" class="shigjeta" src="ikonat/djathte.png" alt="fotografia e shigjetes ne kahjen e djathte" style="cursor: pointer;">
+
+
+</div>
+
+<div class="shfaqja">
+    <span id="produkteTjera">shiko Produktet të tjera</span>
+    <br>
+    <button class="butoni" id="shiko" ><a href="produkteshfaqja.php"> Më shumë!</a>  
+       </button>
+</div>
+
+<div class="fundi" style="background-color: rgb(36, 33, 33); height: auto;">
+    <div class="fundi-majte">
+        <img src="ikonat/logo.jfif" alt="logo " width="20px" height="15px" style="width:100px; height:100px; border-radius:50%;">
+        <span style="font-size: 20px;">Infinity <span style="color: red;">Shoes</span></span>
+    </div>
+    <div class="fundi-mes">
+       
+        <h3>Kontakti</h3>
+        <br>
+    <p>Numri kontaktues :</p>
+    <p style="padding: 5px;"> 1234567890</p> 
+    <br>
+    <p>Email :</p>
+    <p style="padding: 5px;"> eurolejda@gmail.com</p> 
+        <br>
+        <p>Lokacioni :</p>
+        <p style="padding: 5px;">Preshevë, rruga "K Zozi"</p>
+    </div>
+    <div class="fundi-djathte">
+        <h3>Orari</h3>
+        <br>
+        <p>24/7</p>
+    </div>
+</div>
+<div class="mediasociale" style="background-color: rgb(36, 33, 33); width: 100%;">
+    <img src="ikonat/adidas.png" alt="jj" class="msfoto" style="width: 150px; height: 100px;" width="150px" height="100px">
+    <img src="ikonat/nike.png" alt="jj" class="msfoto" style="width: 150px; height: 100px;">
+    <img src="ikonat/jordan.png" alt="jj" class="msfoto" style="width: 150px; height: 100px;">
+</div>
+<p style="background-color: red; width: 100%; text-align: center; font-size: 15px;" >copyrights &copy;</p>
+   <script>
+    let section_counter = document.querySelector('#section_counter');
+let pjnr = document.querySelector('#pjesa-numeruese');
+let counters = document.querySelectorAll('.counter-item .counter');
+let numeruesit = document.querySelectorAll('.numeruesi-produkt .numeruesi');
+let imgcounter = document.querySelectorAll('.counter-img')
+
+
+let numeruesiObserver = new IntersectionObserver(
+  (entries, observer) => {
+    let [entry] = entries;
+    if (!entry.isIntersecting) return;
+
+    let speed = 200;
+    numeruesit.forEach((numeruesi, index) => {
+      function Updatenumeruesi() {
+        const targetNumber = +numeruesi.dataset.target;
+        const initialNumber = +numeruesi.innerText;
+        const incPerCount = targetNumber / speed;
+        if (initialNumber < targetNumber) {
+          numeruesi.innerText = Math.ceil(initialNumber + incPerCount);
+          setTimeout(Updatenumeruesi, 40);
+        }
+        else {
+          numeruesi.innerText = targetNumber;
+        }
+      }
+      Updatenumeruesi();
+
+      if (numeruesi.parentElement.style.animation) {
+        numeruesi.parentElement.style.animation = '';
+      } else {
+        //numeruesi.style.animationduration
+        numeruesi.parentElement.style.animation = `slide-up 3s ease forwards ${
+          index / numeruesit.length + 0.5
+        }s`;
+
+        /*imgnumeruesi.parentElement.style.animation = `slide-uwp 3s ease forwards ${
+          index / numeruesit.length + 0.5
+        }s`;*/
+      }
+    });
+    observer.unobserve(pjnr);
+  },
+  {
+    root: null,
+    threshold: window.innerWidth > 600 ? 0.4 : 0.3,
+  }
+);
+
+numeruesiObserver.observe(pjnr);
+
+// Scroll Animation
+
+let CounterObserver = new IntersectionObserver(
+  (entries, observer) => {
+    let [entry] = entries;
+    if (!entry.isIntersecting) return;
+
+    let speed = 200;
+    counters.forEach((counter, index) => {
+      function UpdateCounter() {
+        const targetNumber = +counter.dataset.target;
+        const initialNumber = +counter.innerText;
+        const incPerCount = targetNumber / speed;
+        if (initialNumber < targetNumber) {
+          counter.innerText = Math.ceil(initialNumber + incPerCount);
+          setTimeout(UpdateCounter, 40);
+        }
+        else {
+          counter.innerText = targetNumber;
+        }
+      }
+      UpdateCounter();
+
+      if (counter.parentElement.style.animation) {
+        counter.parentElement.style.animation = '';
+      } else {
+        //counter.style.animationduration
+        counter.parentElement.style.animation = `slide-up 3s ease forwards ${
+          index / counters.length + 0.5
+        }s`;
+
+        /*imgcounter.parentElement.style.animation = `slide-uwp 3s ease forwards ${
+          index / counters.length + 0.5
+        }s`;*/
+      }
+    });
+    observer.unobserve(section_counter);
+  },
+  {
+    root: null,
+    threshold: window.innerWidth > 600 ? 0.4 : 0.3,
+  }
+);
+
+CounterObserver.observe(section_counter);
+
+
+//e kemi kriju ni var foto ku merre klasen slide-im
+const foto = document.getElementsByClassName('slide-im');
+
+/*e kemi kriju ni var piket ku merr klasen piket*/
+const piket = document.getElementsByClassName('piket');
+
+//e kemi kriju ni var pozita ku ka vleren 0
+let pozita = 0;
+
+//e kemi thirre funskinin shfaqja
+shfaqja();
+
+//e kemi kriju ni funksion shfaqja
+function shfaqja()
+{
+  //e kemi deklaru ni var i
+  var i;
+
+  //per i eshte 0; deri sa i te jete me e vogel se gjatesia e var foto i te rritet per nje
+  for(i=0; i<foto.length; i++){
+      //cdo vlere e far foto te fshihet
+      foto[i].style.display = "none";
+  }
+
+  //var pozita te rritet per nje
+  pozita++;
+
+  //nese pozita eshte me e madhe e gjatesiae foto
+  if(pozita>foto.length)
+  {
+      //pozita ta marre vleren 1
+      pozita = 1
+  }
+
+  //per deri sa i eshte 0 ; deri sa i te jete me e vogel se gjatesia e var piket , i te rritet per nje
+  for(i=0; i<piket.length; i++){
+      //cdo vlere me klasen piket ta marre klasen active
+      piket[i].className = piket[i].className.replace(" active", " ")
+  }
+
+      //var foto sipas var pozita e e eshte pozita -1 te stilizohet block
+      foto[pozita-1].style.display = 'block';
+
+      //var piket sipas var pozita e qe eshte -1 ta marre kalsen active
+      piket[pozita-1].className += " active";
+
+  //te vendoset timeout 3000ms te funksionit shfaqja
+  setTimeout(shfaqja, 10000)
+}
+
+
+
+//levizja automatike e produkteve
+
+
+const zvarriteMajtas = document.getElementById('zvarrit-majtas');
+const zvarriteDjathtas = document.getElementById('zvarrit-djathtas');
+const slider = document.getElementById('slider');
+const produktet = document.getElementsByClassName('korniza-produkti')
+zvarriteDjathtas.addEventListener('click' , function()
+{
+    slider.scrollLeft += 300
+})
+
+zvarriteMajtas.addEventListener('click', function()
+{
+    slider.scrollLeft -= 300
+})
+
+const maxScrollLeft = slider.scrollWidth -= slider.clientWidth
+
+function levizjaAutomatike()
+{
+    if(slider.scrollLeft > (maxScrollLeft -1))
+    {
+        slider.scrollLeft -= maxScrollLeft;
+    }
+    else 
+    {
+        slider.scrollLeft += 1;
+    }
+}
+
+let levizja = setInterval(levizjaAutomatike, 20);
+
+for(let i = 0; i<produktet.length; i++)
+{
+    produktet[i].addEventListener('mouseover', function()
+    {
+        clearInterval(levizja)
+    })
+
+    produktet[i].addEventListener('mouseout', function()
+    {
+        return levizja = setInterval(levizjaAutomatike, 25)
+    })
+}
+
+
+//e kemi kriju ni funksion myFunction
+//kete e kmi thirre kur klikojme tek butoni
+function myFunction() {
+
+//e kemi krijuar nje var x ku merr id navigimi
+var x = document.getElementById("nav");
+
+//nese klasa emri i klases se var x eshte navigimi
+if (x.className === "navigimi-djathte") {
+
+    //te mirret pjesa e responsivitetit
+  x.className += " responsive";
+} 
+//nese jo
+else {
+    //te miret navigimi
+  x.className = "navigimi-djathte";
+}
+}
+
+   </script>
+</body>
+</html>
